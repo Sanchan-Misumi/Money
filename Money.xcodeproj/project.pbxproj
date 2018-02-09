@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE6901A6202DB84900940681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6901A5202DB84900940681 /* AppDelegate.swift */; };
+		EE6901A8202DB84900940681 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6901A7202DB84900940681 /* ViewController.swift */; };
+		EE6901AB202DB84900940681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6901A9202DB84900940681 /* Main.storyboard */; };
+		EE6901AD202DB84900940681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE6901AC202DB84900940681 /* Assets.xcassets */; };
+		EE6901B0202DB84900940681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6901AE202DB84900940681 /* LaunchScreen.storyboard */; };
+		EE6901BB202DB84900940681 /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6901BA202DB84900940681 /* MoneyTests.swift */; };
+		EE6901C6202DB84900940681 /* MoneyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6901C5202DB84900940681 /* MoneyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE6901B7202DB84900940681 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE69019A202DB84900940681 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE6901A1202DB84900940681;
+			remoteInfo = Money;
+		};
+		EE6901C2202DB84900940681 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE69019A202DB84900940681 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE6901A1202DB84900940681;
+			remoteInfo = Money;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE6901A2202DB84900940681 /* Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Money.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE6901A5202DB84900940681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE6901A7202DB84900940681 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE6901AA202DB84900940681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE6901AC202DB84900940681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE6901AF202DB84900940681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE6901B1202DB84900940681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE6901B6202DB84900940681 /* MoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE6901BA202DB84900940681 /* MoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
+		EE6901BC202DB84900940681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE6901C1202DB84900940681 /* MoneyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE6901C5202DB84900940681 /* MoneyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyUITests.swift; sourceTree = "<group>"; };
+		EE6901C7202DB84900940681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE69019F202DB84900940681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE6901B3202DB84900940681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE6901BE202DB84900940681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE690199202DB84900940681 = {
+			isa = PBXGroup;
+			children = (
+				EE6901A4202DB84900940681 /* Money */,
+				EE6901B9202DB84900940681 /* MoneyTests */,
+				EE6901C4202DB84900940681 /* MoneyUITests */,
+				EE6901A3202DB84900940681 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE6901A3202DB84900940681 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE6901A2202DB84900940681 /* Money.app */,
+				EE6901B6202DB84900940681 /* MoneyTests.xctest */,
+				EE6901C1202DB84900940681 /* MoneyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE6901A4202DB84900940681 /* Money */ = {
+			isa = PBXGroup;
+			children = (
+				EE6901A5202DB84900940681 /* AppDelegate.swift */,
+				EE6901A7202DB84900940681 /* ViewController.swift */,
+				EE6901A9202DB84900940681 /* Main.storyboard */,
+				EE6901AC202DB84900940681 /* Assets.xcassets */,
+				EE6901AE202DB84900940681 /* LaunchScreen.storyboard */,
+				EE6901B1202DB84900940681 /* Info.plist */,
+			);
+			path = Money;
+			sourceTree = "<group>";
+		};
+		EE6901B9202DB84900940681 /* MoneyTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE6901BA202DB84900940681 /* MoneyTests.swift */,
+				EE6901BC202DB84900940681 /* Info.plist */,
+			);
+			path = MoneyTests;
+			sourceTree = "<group>";
+		};
+		EE6901C4202DB84900940681 /* MoneyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE6901C5202DB84900940681 /* MoneyUITests.swift */,
+				EE6901C7202DB84900940681 /* Info.plist */,
+			);
+			path = MoneyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE6901A1202DB84900940681 /* Money */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE6901CA202DB84900940681 /* Build configuration list for PBXNativeTarget "Money" */;
+			buildPhases = (
+				EE69019E202DB84900940681 /* Sources */,
+				EE69019F202DB84900940681 /* Frameworks */,
+				EE6901A0202DB84900940681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Money;
+			productName = Money;
+			productReference = EE6901A2202DB84900940681 /* Money.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE6901B5202DB84900940681 /* MoneyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE6901CD202DB84900940681 /* Build configuration list for PBXNativeTarget "MoneyTests" */;
+			buildPhases = (
+				EE6901B2202DB84900940681 /* Sources */,
+				EE6901B3202DB84900940681 /* Frameworks */,
+				EE6901B4202DB84900940681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE6901B8202DB84900940681 /* PBXTargetDependency */,
+			);
+			name = MoneyTests;
+			productName = MoneyTests;
+			productReference = EE6901B6202DB84900940681 /* MoneyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE6901C0202DB84900940681 /* MoneyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE6901D0202DB84900940681 /* Build configuration list for PBXNativeTarget "MoneyUITests" */;
+			buildPhases = (
+				EE6901BD202DB84900940681 /* Sources */,
+				EE6901BE202DB84900940681 /* Frameworks */,
+				EE6901BF202DB84900940681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE6901C3202DB84900940681 /* PBXTargetDependency */,
+			);
+			name = MoneyUITests;
+			productName = MoneyUITests;
+			productReference = EE6901C1202DB84900940681 /* MoneyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE69019A202DB84900940681 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Maho Misumi";
+				TargetAttributes = {
+					EE6901A1202DB84900940681 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EE6901B5202DB84900940681 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EE6901A1202DB84900940681;
+					};
+					EE6901C0202DB84900940681 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EE6901A1202DB84900940681;
+					};
+				};
+			};
+			buildConfigurationList = EE69019D202DB84900940681 /* Build configuration list for PBXProject "Money" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE690199202DB84900940681;
+			productRefGroup = EE6901A3202DB84900940681 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE6901A1202DB84900940681 /* Money */,
+				EE6901B5202DB84900940681 /* MoneyTests */,
+				EE6901C0202DB84900940681 /* MoneyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE6901A0202DB84900940681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE6901B0202DB84900940681 /* LaunchScreen.storyboard in Resources */,
+				EE6901AD202DB84900940681 /* Assets.xcassets in Resources */,
+				EE6901AB202DB84900940681 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE6901B4202DB84900940681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE6901BF202DB84900940681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE69019E202DB84900940681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE6901A8202DB84900940681 /* ViewController.swift in Sources */,
+				EE6901A6202DB84900940681 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE6901B2202DB84900940681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE6901BB202DB84900940681 /* MoneyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE6901BD202DB84900940681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE6901C6202DB84900940681 /* MoneyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE6901B8202DB84900940681 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE6901A1202DB84900940681 /* Money */;
+			targetProxy = EE6901B7202DB84900940681 /* PBXContainerItemProxy */;
+		};
+		EE6901C3202DB84900940681 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE6901A1202DB84900940681 /* Money */;
+			targetProxy = EE6901C2202DB84900940681 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE6901A9202DB84900940681 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE6901AA202DB84900940681 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE6901AE202DB84900940681 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE6901AF202DB84900940681 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE6901C8202DB84900940681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE6901C9202DB84900940681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE6901CB202DB84900940681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Money/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maho.com.Money;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE6901CC202DB84900940681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Money/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maho.com.Money;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE6901CE202DB84900940681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maho.com.MoneyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Money.app/Money";
+			};
+			name = Debug;
+		};
+		EE6901CF202DB84900940681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maho.com.MoneyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Money.app/Money";
+			};
+			name = Release;
+		};
+		EE6901D1202DB84900940681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maho.com.MoneyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Money;
+			};
+			name = Debug;
+		};
+		EE6901D2202DB84900940681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maho.com.MoneyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Money;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE69019D202DB84900940681 /* Build configuration list for PBXProject "Money" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE6901C8202DB84900940681 /* Debug */,
+				EE6901C9202DB84900940681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE6901CA202DB84900940681 /* Build configuration list for PBXNativeTarget "Money" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE6901CB202DB84900940681 /* Debug */,
+				EE6901CC202DB84900940681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE6901CD202DB84900940681 /* Build configuration list for PBXNativeTarget "MoneyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE6901CE202DB84900940681 /* Debug */,
+				EE6901CF202DB84900940681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE6901D0202DB84900940681 /* Build configuration list for PBXNativeTarget "MoneyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE6901D1202DB84900940681 /* Debug */,
+				EE6901D2202DB84900940681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE69019A202DB84900940681 /* Project object */;
+}
