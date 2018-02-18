@@ -27,6 +27,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var naiyo1: String! = ""
     var naiyo2: String! = ""
     
+    
     var incomeRirekiarray: [String] = []
     var spendingRirekiarray = [String]()
     
@@ -43,8 +44,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
         spendingNaiyoTextfield.delegate = self
         
         //履歴取り出し
-        incomeRirekiarray = saveData.array(forKey: "shunyunaiyo") as? [String] ?? []
-        spendingRirekiarray = saveData.array(forKey: "shishutunaiyo") as? [String] ?? []
+        incomeRirekiarray = saveData.array(forKey: "incomenaiyo") as? [String] ?? []
+       
         
         //shunyurirekiLabelに表示
         var i = 0
@@ -69,32 +70,27 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
 
     @IBAction func shunyu(){
-        saveData.set(incomeTextfield.text, forKey: "income")
+        saveData.set(incomeTextfield.text, forKey: "incomenaiyo")
 //        syunyuTextfield.text = saveData.object(forKey:"shunyu") as? String
-        
-        
-        
+
 
         number = number + Int(number1)!
         zandakaLabel.text = String(number)
         
-        print(number)
-        incomeRirekiarray.append(naiyo1)
-        incomeRirekiarray.append(number1)
-        
-        if incomeTextfield.text! == Empty {
-            incomeTextfield.text! = ""
+        if incomeTextfield.text! .isEmpty {
+            incomeTextfield.text! = "0"
         } else{
-            number1 = incomeRirekiarray.text!
+          number1 = incomeTextfield.text!
         }
         
-        if incomeNaiyoTextfield.text! == Empty {
+        if incomeNaiyoTextfield.text! .isEmpty {
            incomeNaiyoTextfield.text! = ""
         } else{
             naiyo1 = incomeNaiyoTextfield.text!
         }
         
-        
+        incomeRirekiarray.append(naiyo1)
+        incomeRirekiarray.append(number1)
         
         saveData.set(incomeRirekiarray, forKey: "incomenaiyo")
 //        syunyuTextfield.text = saveData.object(forKey:"shunyunaiyo") as? String
@@ -115,10 +111,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
         incomeTextfield.text = ""
         incomeNaiyoTextfield.text = ""
         zandakaLabel.text = ""
-        incomeRirekiarray.removeAll()
+        incomeRirekiLabel.text = ""
         
+        incomeRirekiarray.removeAll()
+        saveData.set(incomeRirekiarray, forKey: "incomenaiyo")
     }
 }
 
-}
+
 
