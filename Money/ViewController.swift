@@ -10,22 +10,25 @@ import UIKit
 
 class ViewController: UIViewController,UITextFieldDelegate {
     
-    @IBOutlet var syunyuTextfield: UITextField!
-    @IBOutlet var syunyunaiyoTextfield: UITextField!
-    @IBOutlet var shishutuTextfield: UITextField!
-    @IBOutlet var shishutunaiyoTextfield: UITextField!
+   
+    @IBOutlet var incomeTextfield: UITextField!
+    @IBOutlet var spendingTextfield: UITextField!
+    
+    @IBOutlet var incomeNaiyoTextfield: UITextField!
+    @IBOutlet var spendingNaiyoTextfield: UITextField!
+  
     @IBOutlet var zandakaLabel: UILabel!
-    @IBOutlet var syunyurirekiLabel: UILabel!
-    @IBOutlet var shishuturirekiLabel: UILabel!
+    @IBOutlet var incomeRirekiLabel: UILabel!
+    @IBOutlet var spendingRirekiLabel: UILabel!
     
     var number: Int! = 0
-    var text1: String! = "0"
-    var text2: String! = "0"
+    var number1: String! = "0"
+    var number2: String! = "0"
     var naiyo1: String! = ""
     var naiyo2: String! = ""
     
-    var shunyurirekiarray: [String] = []
-    var shishuturirekiarray = [String]()
+    var incomeRirekiarray: [String] = []
+    var spendingRirekiarray = [String]()
     
     let saveData: UserDefaults = UserDefaults.standard
 
@@ -34,39 +37,28 @@ class ViewController: UIViewController,UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        syunyuTextfield.delegate = self
-        syunyunaiyoTextfield.delegate = self
-        shishutuTextfield.delegate = self
-        shishutunaiyoTextfield.delegate = self
+        incomeTextfield.delegate = self
+        spendingTextfield.delegate = self
+        incomeNaiyoTextfield.delegate = self
+        spendingNaiyoTextfield.delegate = self
         
         //履歴取り出し
-        shunyurirekiarray = saveData.array(forKey: "shunyunaiyo") as? [String] ?? []
-        shishuturirekiarray = saveData.array(forKey: "shishutunaiyo") as? [String] ?? []
+        incomeRirekiarray = saveData.array(forKey: "shunyunaiyo") as? [String] ?? []
+        spendingRirekiarray = saveData.array(forKey: "shishutunaiyo") as? [String] ?? []
         
         //shunyurirekiLabelに表示
         var i = 0
-        for shunyurireki in shunyurirekiarray {
+        for incomeRireki in incomeRirekiarray {
 
             if i % 2 == 0 {
-                syunyurirekiLabel.text = syunyurirekiLabel.text! + shunyurireki + " "
-                print(shunyurireki)
-                print(shunyurirekiarray)
+                incomeRirekiLabel.text = incomeRirekiLabel.text! + incomeRireki + " "
+               
             } else {
-                syunyurirekiLabel.text = syunyurirekiLabel.text! + shunyurireki + "\n"
+                incomeRirekiLabel.text = incomeRirekiLabel.text! + incomeRireki + "\n"
             }
             i = i + 1
         }
 
-       
-        for shishuturireki in shunyurirekiarray {
-            
-            if i % 2 == 0{
-                shishuturirekiLabel.text = shishuturirekiLabel.text! + shishuturireki + ""
-                } else {
-                shishuturirekiLabel.text = shishuturirekiLabel.text! + shishuturireki + "\n"
-            }
-            i = i + 1
-        }
         
         
     }
@@ -77,70 +69,55 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
 
     @IBAction func shunyu(){
-        saveData.set(syunyuTextfield.text, forKey: "shunyu")
+        saveData.set(incomeTextfield.text, forKey: "income")
 //        syunyuTextfield.text = saveData.object(forKey:"shunyu") as? String
         
         
         
 
-        number = number + Int(text1)!
+        number = number + Int(number1)!
         zandakaLabel.text = String(number)
         
         print(number)
-        shunyurirekiarray.append(naiyo1)
-        shunyurirekiarray.append(text1)
+        incomeRirekiarray.append(naiyo1)
+        incomeRirekiarray.append(number1)
         
-        if syunyuTextfield.text! == Empty {
-            syunyuTextfield.text! = ""
+        if incomeTextfield.text! == Empty {
+            incomeTextfield.text! = ""
         } else{
-            text1 = syunyuTextfield.text!
+            number1 = incomeRirekiarray.text!
         }
         
-        if syunyunaiyoTextfield.text! == is.Empty {
-           syunyunaiyoTextfield.text! = ""
+        if incomeNaiyoTextfield.text! == Empty {
+           incomeNaiyoTextfield.text! = ""
         } else{
-            naiyo1 = syunyunaiyoTextfield.text!
+            naiyo1 = incomeNaiyoTextfield.text!
         }
         
-        }
         
-        saveData.set(shunyurirekiarray, forKey: "shunyunaiyo")
+        
+        saveData.set(incomeRirekiarray, forKey: "incomenaiyo")
 //        syunyuTextfield.text = saveData.object(forKey:"shunyunaiyo") as? String
 //        syunyunaiyoTextfield.text = saveData.object(forKey:"shunyu") as? String
         
-        syunyurirekiLabel.text = String(describing: shunyurirekiarray)
+       incomeRIreki.text = String(describing: incomeRirekiarray)
         
         //履歴取り出し
-        shunyurirekiarray = saveData.array(forKey: "shunyunaiyo") as? [String] ?? []
+        incomeRirekiarray = saveData.array(forKey: "incomenaiyo") as? [String] ?? []
         
-    }
-    
-    @IBAction func shishutu(){
-        saveData.set(shishutuTextfield.text, forKey: "shishutu")
-        shishutuTextfield.text = saveData.object(forKey:"shishutu") as? String
-        
-        text2 = shishutuTextfield.text!
-        
-        number = number - (Int(text2))!
-        zandakaLabel.text = String(number)
-    
-}
     
     
     @IBAction func reset(){
         number = 0
-        text1 = "0"
+        number1 = "0"
         naiyo1 = "0"
-        syunyuTextfield.text = ""
-        shishutuTextfield.text = ""
-        syunyunaiyoTextfield.text = ""
-        shishutunaiyoTextfield.text = ""
+        incomeTextfield.text = ""
+        incomeNaiyoTextfield.text = ""
         zandakaLabel.text = ""
-        syunyurirekiLabel.text = ""
-        shishuturirekiLabel.text = ""
-        shunyurirekiarray.removeAll()
-        shishuturirekiarray.removeAll()
+        incomeRirekiarray.removeAll()
         
     }
+}
+
 }
 

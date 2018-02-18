@@ -104,12 +104,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="shishutuTextfield" destination="6vf-3i-xWc" id="BGJ-Hj-rcJ"/>
-                        <outlet property="shishutunaiyoTextfield" destination="TMu-yg-2uc" id="R3I-bN-Vdc"/>
-                        <outlet property="shishuturirekiLabel" destination="ZCr-cv-yPH" id="Z4s-jn-1aN"/>
-                        <outlet property="syunyuTextfield" destination="tSe-EZ-u3l" id="3AH-ZP-UhE"/>
-                        <outlet property="syunyunaiyoTextfield" destination="UbU-wW-Gcg" id="Myf-FW-cR8"/>
-                        <outlet property="syunyurirekiLabel" destination="lqs-Ps-lab" id="7LW-87-ZCI"/>
+                        <outlet property="incomeNaiyoTextfield" destination="UbU-wW-Gcg" id="H8X-3m-Gfr"/>
+                        <outlet property="incomeRirekiLabel" destination="lqs-Ps-lab" id="2mL-pG-VUA"/>
+                        <outlet property="incomeTextfield" destination="tSe-EZ-u3l" id="I1h-zn-Qd5"/>
+                        <outlet property="spendingNaiyoTextfield" destination="TMu-yg-2uc" id="45E-3c-GOl"/>
+                        <outlet property="spendingRirekiLabel" destination="ZCr-cv-yPH" id="R8a-zP-ggD"/>
+                        <outlet property="spendingTextfield" destination="6vf-3i-xWc" id="7Id-h9-Rha"/>
                         <outlet property="zandakaLabel" destination="5qj-xn-pbr" id="pVa-K9-FCK"/>
                     </connections>
                 </viewController>
