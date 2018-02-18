@@ -100,11 +100,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
 //        syunyuTextfield.text = saveData.object(forKey:"shunyunaiyo") as? String
 //        syunyunaiyoTextfield.text = saveData.object(forKey:"shunyu") as? String
         
-       incomeRIreki.text = String(describing: incomeRirekiarray)
+        incomeRirekiLabel.text = String(describing: incomeRirekiarray)
         
         //履歴取り出し
         incomeRirekiarray = saveData.array(forKey: "incomenaiyo") as? [String] ?? []
         
+    }
     
     
     @IBAction func reset(){
